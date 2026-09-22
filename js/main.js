@@ -6,8 +6,12 @@
 
   // ---- Nav: solid/blur background once scrolled ----
   var nav = document.getElementById("nav");
+  // Pages with no dark hero at the top (e.g. privacy.html) set
+  // data-force-scrolled="true" so the nav always uses its light-background
+  // (dark text/logo) styling instead of the hero-only white variant.
+  var forceScrolled = nav.dataset.forceScrolled === "true";
   var onScroll = function () {
-    if (window.scrollY > 12) nav.classList.add("is-scrolled");
+    if (forceScrolled || window.scrollY > 12) nav.classList.add("is-scrolled");
     else nav.classList.remove("is-scrolled");
   };
   onScroll();
