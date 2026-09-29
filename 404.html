@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page not found — Nideyatech</title>
+<meta name="description" content="The page you're looking for doesn't exist." />
+<meta name="robots" content="noindex" />
+
+<link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicon-16.png" sizes="16x16" />
+<link rel="apple-touch-icon" href="/assets/favicon-180.png" />
+<link rel="icon" href="/assets/favicon.ico" />
+<meta name="theme-color" content="#141e46" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- Absolute paths: Cloudflare Pages serves this file for missing URLs at any depth. -->
+<link rel="stylesheet" href="/css/styles.css?v=3" />
+<style>
+  .notfound { min-height: 100vh; display: flex; align-items: center; text-align: center; }
+  .notfound .container { position: relative; z-index: 2; padding-top: var(--nav-h); padding-bottom: 60px; }
+  .notfound .code { font-size: clamp(90px, 18vw, 160px); font-weight: 800; line-height: 1; letter-spacing: -0.04em; }
+  .notfound h1 { font-size: clamp(26px, 4vw, 38px); margin-top: 12px; }
+  .notfound p { color: rgba(255,255,255,0.72); max-width: 460px; margin: 16px auto 0; }
+  .notfound .hero-cta { justify-content: center; }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="/" class="nav-logo">
+      <img class="logo-dark" src="/assets/logo/logo-navbar.png" alt="Nideyatech" width="101" height="102" />
+      <img class="logo-light" src="/assets/logo/logo-navbar-light.png" alt="" aria-hidden="true" width="101" height="102" />
+    </a>
+    <nav class="nav-links">
+      <a href="/#products">Products</a>
+      <a href="/#solutions">Solutions</a>
+      <a href="/#process">Process</a>
+      <a href="/#about">About</a>
+    </nav>
+    <div class="nav-right">
+      <a href="/#contact" class="btn btn-outline nav-contact-btn">Contact</a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/#products">Products</a>
+  <a href="/#solutions">Solutions</a>
+  <a href="/#process">Process</a>
+  <a href="/#about">About</a>
+  <a href="/#contact">Contact</a>
+</div>
+
+<section class="hero notfound">
+  <div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+  <div class="container">
+    <div class="code gradient-text">404</div>
+    <h1>This page doesn't exist.</h1>
+    <p>The link may be broken or the page may have moved. Let's get you back on track.</p>
+    <div class="hero-cta">
+      <a href="/" class="btn btn-primary">Back to home</a>
+      <a href="https://www.sitevault.nideyatech.com" target="_blank" rel="noopener" class="btn btn-ghost-dark">Visit SiteVault</a>
+    </div>
+  </div>
+</section>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

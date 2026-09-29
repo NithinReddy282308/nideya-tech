@@ -5,6 +5,7 @@
   --indigo: #141e46;
   --indigo-2: #1c2a5e;
   --saffron: #f5a623;
+  --saffron-text: #9a5b00; /* saffron darkened for text on light bgs (WCAG AA 4.9:1 on ivory) */
   --cyan: #28c4c9;
   --ivory: #f7f5ef;
   --ink: #0f0f14;
@@ -58,7 +59,7 @@ section { position: relative; }
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--saffron);
+  color: var(--saffron-text);
 }
 .eyebrow::before {
   content: "";
@@ -453,7 +454,7 @@ p { line-height: 1.7; color: var(--text-soft); margin: 0; }
 .sol-card p { font-size: 14.5px; }
 .sol-card .tag {
   display: inline-block; margin-top: 16px; font-size: 12px; font-weight: 700;
-  color: var(--saffron); letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--saffron-text); letter-spacing: 0.04em; text-transform: uppercase;
 }
 
 /* =========================================================
@@ -532,8 +533,8 @@ p { line-height: 1.7; color: var(--text-soft); margin: 0; }
 ========================================================= */
 .footer { background: var(--ink); color: rgba(255,255,255,0.6); padding: 80px 0 0; }
 .footer-top { display: grid; grid-template-columns: 1.3fr 0.9fr 0.9fr 1fr; gap: 40px; padding-bottom: 56px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-.footer-brand img { height: 30px; margin-bottom: 18px; }
-.footer-brand p { font-size: 14px; max-width: 260px; color: rgba(255,255,255,0.45); }
+.footer-brand img { height: 30px; width: auto; margin-bottom: 18px; }
+.footer-brand p { font-size: 14px; max-width: 260px; color: rgba(255,255,255,0.6); }
 .footer-social { display: flex; gap: 10px; margin-top: 22px; }
 .footer-social a {
   width: 38px; height: 38px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.14);
@@ -549,9 +550,9 @@ p { line-height: 1.7; color: var(--text-soft); margin: 0; }
 
 .footer-bottom {
   display: flex; align-items: center; justify-content: space-between;
-  padding: 26px 0; font-size: 13px; color: rgba(255,255,255,0.35); flex-wrap: wrap; gap: 10px;
+  padding: 26px 0; font-size: 13px; color: rgba(255,255,255,0.6); flex-wrap: wrap; gap: 10px;
 }
-.footer-bottom a:hover { color: rgba(255,255,255,0.7); }
+.footer-bottom a:hover { color: #fff; }
 
 /* =========================================================
    Responsive
